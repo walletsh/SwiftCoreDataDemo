@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftCoreDataDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,380 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAI-fp-Iwm">
+                                <rect key="frame" x="40" y="45" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="1" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Cwn-Mc-vgC"/>
+                                    <constraint firstAttribute="height" constant="40" id="vnH-tA-HYj"/>
+                                </constraints>
+                                <state key="normal" title="Country增">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryAddData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0z-ya-0SJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-Xq-hbL">
+                                <rect key="frame" x="215" y="45" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1ha-wg-kfH"/>
+                                    <constraint firstAttribute="width" constant="120" id="KjX-Fc-XSC"/>
+                                </constraints>
+                                <state key="normal" title="Country删">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryRemoveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lmo-mf-B8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcB-ET-f1Q">
+                                <rect key="frame" x="215" y="90" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jok-29-SPg"/>
+                                    <constraint firstAttribute="width" constant="120" id="nzS-Qj-GLU"/>
+                                </constraints>
+                                <state key="normal" title="Country查">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countrySearchData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkS-Os-B3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCQ-D6-Ndg">
+                                <rect key="frame" x="40" y="90" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PRQ-s1-5pd"/>
+                                    <constraint firstAttribute="width" constant="120" id="dDs-g5-BzM"/>
+                                </constraints>
+                                <state key="normal" title="Country改">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alT-ir-j3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-5N-zgJ">
+                                <rect key="frame" x="40" y="141" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="1" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2pM-C7-8ye"/>
+                                    <constraint firstAttribute="height" constant="40" id="gfa-vy-Uq5"/>
+                                </constraints>
+                                <state key="normal" title="分页查询">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pageSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JM9-UD-yoZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-zh-EEb">
+                                <rect key="frame" x="40" y="192" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2xa-sR-z0Z"/>
+                                    <constraint firstAttribute="width" constant="120" id="B20-XS-HUM"/>
+                                </constraints>
+                                <state key="normal" title="加载请求模板">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ojn-zx-fIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-Bx-wJ8">
+                                <rect key="frame" x="40" y="237" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ESb-aP-4U3"/>
+                                    <constraint firstAttribute="width" constant="120" id="y5m-cZ-lx0"/>
+                                </constraints>
+                                <state key="normal" title="获取Count方法1">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getResultCountOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CcE-NK-BYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTC-H4-Hu4">
+                                <rect key="frame" x="40" y="282" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0TA-8f-YqL"/>
+                                    <constraint firstAttribute="width" constant="120" id="LvQ-yo-eHR"/>
+                                </constraints>
+                                <state key="normal" title="位运算">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bitwiseArithmetic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2S-XR-JVa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-O7-fjZ">
+                                <rect key="frame" x="40" y="378" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0wK-1Q-Wcd"/>
+                                    <constraint firstAttribute="width" constant="120" id="1lq-bi-mcw"/>
+                                </constraints>
+                                <state key="normal" title="异步请求">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="asyncRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJq-1T-ghi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34X-mM-ibf">
+                                <rect key="frame" x="215" y="333" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="d1U-Ij-cec"/>
+                                    <constraint firstAttribute="height" constant="40" id="zSp-89-QTM"/>
+                                </constraints>
+                                <state key="normal" title="批量删除">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="batchDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6F-wu-Sjb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVC-gu-ZrR">
+                                <rect key="frame" x="40" y="333" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jj3-On-dvP"/>
+                                    <constraint firstAttribute="height" constant="40" id="qE2-9r-gHc"/>
+                                </constraints>
+                                <state key="normal" title="批量更新">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="batchUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI5-at-NZm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daE-3g-l4t">
+                                <rect key="frame" x="215" y="237" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="1" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="N2z-Nd-Zkk"/>
+                                    <constraint firstAttribute="width" constant="120" id="hzK-1e-tS0"/>
+                                </constraints>
+                                <state key="normal" title="获取Count方法2">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getResultCountTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mpt-BR-ba7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm3-vW-Oh0">
+                                <rect key="frame" x="215" y="192" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="1" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Td-M6-On4"/>
+                                    <constraint firstAttribute="width" constant="120" id="j1P-yi-vfa"/>
+                                </constraints>
+                                <state key="normal" title="请求结果顺序">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDb-vG-DAR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K9-NK-wyW">
+                                <rect key="frame" x="215" y="141" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="1" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="XCs-vr-3bt"/>
+                                    <constraint firstAttribute="height" constant="40" id="cFD-Fk-U8u"/>
+                                </constraints>
+                                <state key="normal" title="模糊查询">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fuzzySearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLH-z8-9UQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUW-PM-hZ5">
+                                <rect key="frame" x="0.0" y="135" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="p37-GI-0sI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmK-Fg-b3A">
+                                <rect key="frame" x="0.0" y="327" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ya8-P1-T95"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-gD-ipw">
+                                <rect key="frame" x="0.0" y="186" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kJN-HX-5MU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-8O-1Ic">
+                                <rect key="frame" x="0.0" y="519" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8xN-oe-E5e"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l66-rP-IAY">
+                                <rect key="frame" x="0.0" y="570" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="COK-N8-mrb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZq-Ub-Y8J">
+                                <rect key="frame" x="0.0" y="423" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zGg-qn-xML"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-RR-TJq">
+                                <rect key="frame" x="25" y="474" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="c56-fJ-ERy"/>
+                                    <constraint firstAttribute="height" constant="40" id="h6O-EM-PMg"/>
+                                </constraints>
+                                <state key="normal" title="设置反向条件(删除)">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverseRelationshipsDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wA5-8m-7ES"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-Hb-k16">
+                                <rect key="frame" x="200" y="474" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Yp0-F6-eXf"/>
+                                    <constraint firstAttribute="height" constant="40" id="g60-Yw-f2r"/>
+                                </constraints>
+                                <state key="normal" title="未设置反向条件(删除)">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="relationshipsDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP2-W7-KQc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-by-gpa">
+                                <rect key="frame" x="25" y="429" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h4N-Et-8uX"/>
+                                    <constraint firstAttribute="width" constant="150" id="rBi-YQ-fIj"/>
+                                </constraints>
+                                <state key="normal" title="设置反向条件(添加)">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverseRelationshipsAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRC-AT-LnK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvO-Oi-WY0">
+                                <rect key="frame" x="20" y="525" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QGi-6n-GWl"/>
+                                </constraints>
+                                <state key="normal" title="NSFetchedResultsController">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchRequestController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlv-s2-VUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awV-Lj-sda">
+                                <rect key="frame" x="200" y="429" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88075022920000001" green="1" blue="0.61818030899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EKp-XL-HOG"/>
+                                    <constraint firstAttribute="width" constant="150" id="OzR-8f-3zL"/>
+                                </constraints>
+                                <state key="normal" title="未设置反向条件(添加)">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="relationshipsAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLI-rX-B9l"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="awV-Lj-sda" firstAttribute="top" secondItem="KZq-Ub-Y8J" secondAttribute="bottom" constant="5" id="0Jo-Tl-2sq"/>
+                            <constraint firstItem="l66-rP-IAY" firstAttribute="top" secondItem="nvO-Oi-WY0" secondAttribute="bottom" constant="5" id="0l8-3f-HIA"/>
+                            <constraint firstItem="KZq-Ub-Y8J" firstAttribute="top" secondItem="Wds-O7-fjZ" secondAttribute="bottom" constant="5" id="0yl-53-NLv"/>
+                            <constraint firstItem="PbW-gD-ipw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0yp-xN-z2F"/>
+                            <constraint firstItem="uTC-H4-Hu4" firstAttribute="top" secondItem="AgD-Bx-wJ8" secondAttribute="bottom" constant="5" id="1W0-lb-LtP"/>
+                            <constraint firstAttribute="trailing" secondItem="nvO-Oi-WY0" secondAttribute="trailing" constant="20" id="5Jx-Nj-qXW"/>
+                            <constraint firstAttribute="trailing" secondItem="xmK-Fg-b3A" secondAttribute="trailing" id="5x3-Kq-fOc"/>
+                            <constraint firstItem="WUW-PM-hZ5" firstAttribute="top" secondItem="GCQ-D6-Ndg" secondAttribute="bottom" constant="5" id="6iX-NY-ZsX"/>
+                            <constraint firstItem="ogv-8O-1Ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="71b-jH-h92"/>
+                            <constraint firstAttribute="trailing" secondItem="34X-mM-ibf" secondAttribute="trailing" constant="40" id="8P4-LC-ubV"/>
+                            <constraint firstItem="wmS-5N-zgJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="AVX-Vb-63h"/>
+                            <constraint firstAttribute="trailing" secondItem="KZq-Ub-Y8J" secondAttribute="trailing" id="BWB-4A-8xu"/>
+                            <constraint firstAttribute="trailing" secondItem="l66-rP-IAY" secondAttribute="trailing" id="CAg-XL-hJG"/>
+                            <constraint firstItem="tVC-gu-ZrR" firstAttribute="top" secondItem="xmK-Fg-b3A" secondAttribute="bottom" constant="5" id="CPs-i2-oDb"/>
+                            <constraint firstAttribute="trailing" secondItem="Jm3-vW-Oh0" secondAttribute="trailing" constant="40" id="DtQ-O9-S9E"/>
+                            <constraint firstItem="ldA-by-gpa" firstAttribute="top" secondItem="KZq-Ub-Y8J" secondAttribute="bottom" constant="5" id="F04-x4-QX4"/>
+                            <constraint firstItem="XcB-ET-f1Q" firstAttribute="top" secondItem="aMQ-Xq-hbL" secondAttribute="bottom" constant="5" id="Fde-KE-S4q"/>
+                            <constraint firstItem="UtQ-zh-EEb" firstAttribute="top" secondItem="PbW-gD-ipw" secondAttribute="bottom" constant="5" id="J95-YI-jeE"/>
+                            <constraint firstItem="pAI-fp-Iwm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="KDM-zB-Zd7"/>
+                            <constraint firstAttribute="trailing" secondItem="ogv-8O-1Ic" secondAttribute="trailing" id="KM4-eZ-2gb"/>
+                            <constraint firstItem="awV-Lj-sda" firstAttribute="centerX" secondItem="34X-mM-ibf" secondAttribute="centerX" id="LeL-dl-On5"/>
+                            <constraint firstItem="nvO-Oi-WY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MeG-pP-H6L"/>
+                            <constraint firstItem="PbW-gD-ipw" firstAttribute="top" secondItem="5K9-NK-wyW" secondAttribute="bottom" constant="5" id="OEt-NF-iMs"/>
+                            <constraint firstItem="ogv-8O-1Ic" firstAttribute="top" secondItem="VXa-Hb-k16" secondAttribute="bottom" constant="5" id="OY2-TQ-8YC"/>
+                            <constraint firstItem="VXa-Hb-k16" firstAttribute="top" secondItem="awV-Lj-sda" secondAttribute="bottom" constant="5" id="QjL-wp-6nA"/>
+                            <constraint firstItem="34X-mM-ibf" firstAttribute="top" secondItem="xmK-Fg-b3A" secondAttribute="bottom" constant="5" id="RaI-Ry-bVa"/>
+                            <constraint firstAttribute="trailing" secondItem="aMQ-Xq-hbL" secondAttribute="trailing" constant="40" id="XrI-4V-Hr4"/>
+                            <constraint firstItem="GCQ-D6-Ndg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Z7I-Vb-TUA"/>
+                            <constraint firstItem="UtQ-zh-EEb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="a0D-QG-ni3"/>
+                            <constraint firstItem="Wds-O7-fjZ" firstAttribute="top" secondItem="tVC-gu-ZrR" secondAttribute="bottom" constant="5" id="aSr-aj-LNR"/>
+                            <constraint firstItem="nvO-Oi-WY0" firstAttribute="top" secondItem="ogv-8O-1Ic" secondAttribute="bottom" constant="5" id="ahK-hc-4Q4"/>
+                            <constraint firstItem="5K9-NK-wyW" firstAttribute="top" secondItem="WUW-PM-hZ5" secondAttribute="bottom" constant="5" id="fyK-HR-Hh7"/>
+                            <constraint firstAttribute="trailing" secondItem="5K9-NK-wyW" secondAttribute="trailing" constant="40" id="h5Y-eD-FnX"/>
+                            <constraint firstAttribute="trailing" secondItem="PbW-gD-ipw" secondAttribute="trailing" id="hKh-B6-w8B"/>
+                            <constraint firstItem="xmK-Fg-b3A" firstAttribute="top" secondItem="uTC-H4-Hu4" secondAttribute="bottom" constant="5" id="hnK-2I-4vz"/>
+                            <constraint firstAttribute="trailing" secondItem="daE-3g-l4t" secondAttribute="trailing" constant="40" id="j85-As-Cok"/>
+                            <constraint firstItem="xmK-Fg-b3A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jxe-eG-yHo"/>
+                            <constraint firstItem="AgD-Bx-wJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="ond-MB-gg2"/>
+                            <constraint firstItem="t4e-RR-TJq" firstAttribute="centerX" secondItem="ldA-by-gpa" secondAttribute="centerX" id="pUY-y6-7xv"/>
+                            <constraint firstItem="Jm3-vW-Oh0" firstAttribute="top" secondItem="PbW-gD-ipw" secondAttribute="bottom" constant="5" id="qxJ-Hu-E4f"/>
+                            <constraint firstItem="tVC-gu-ZrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="rgU-O9-G7e"/>
+                            <constraint firstItem="pAI-fp-Iwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="rlZ-da-MXD"/>
+                            <constraint firstItem="GCQ-D6-Ndg" firstAttribute="top" secondItem="pAI-fp-Iwm" secondAttribute="bottom" constant="5" id="rsA-hJ-eao"/>
+                            <constraint firstItem="VXa-Hb-k16" firstAttribute="centerX" secondItem="awV-Lj-sda" secondAttribute="centerX" id="sOR-w9-flJ"/>
+                            <constraint firstItem="l66-rP-IAY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uRO-TR-qxH"/>
+                            <constraint firstItem="daE-3g-l4t" firstAttribute="top" secondItem="Jm3-vW-Oh0" secondAttribute="bottom" constant="5" id="v1w-N1-DoR"/>
+                            <constraint firstItem="t4e-RR-TJq" firstAttribute="top" secondItem="ldA-by-gpa" secondAttribute="bottom" constant="5" id="vXA-X7-G5d"/>
+                            <constraint firstAttribute="trailing" secondItem="WUW-PM-hZ5" secondAttribute="trailing" id="w0I-oN-4hr"/>
+                            <constraint firstItem="AgD-Bx-wJ8" firstAttribute="top" secondItem="UtQ-zh-EEb" secondAttribute="bottom" constant="5" id="wj1-jh-G6b"/>
+                            <constraint firstItem="Wds-O7-fjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="wjZ-9L-mAM"/>
+                            <constraint firstAttribute="trailing" secondItem="XcB-ET-f1Q" secondAttribute="trailing" constant="40" id="xAA-i2-eNb"/>
+                            <constraint firstItem="KZq-Ub-Y8J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xgm-sc-FX3"/>
+                            <constraint firstItem="aMQ-Xq-hbL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="yZ3-nH-bN5"/>
+                            <constraint firstItem="WUW-PM-hZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zTB-es-DUe"/>
+                            <constraint firstItem="uTC-H4-Hu4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="zTT-q3-hOI"/>
+                            <constraint firstItem="wmS-5N-zgJ" firstAttribute="top" secondItem="WUW-PM-hZ5" secondAttribute="bottom" constant="5" id="zY5-oj-SmU"/>
+                            <constraint firstItem="ldA-by-gpa" firstAttribute="centerX" secondItem="Wds-O7-fjZ" secondAttribute="centerX" id="zgL-M2-Lys"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

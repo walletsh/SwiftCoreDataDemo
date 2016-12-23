@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE2EF9F71E0A66D00091253B /* School.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9F51E0A66D00091253B /* School.xcdatamodeld */; };
+		EE2EF9FC1E0A67AE0091253B /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9F81E0A67AE0091253B /* Student+CoreDataClass.swift */; };
+		EE2EF9FD1E0A67AE0091253B /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9F91E0A67AE0091253B /* Student+CoreDataProperties.swift */; };
+		EE2EF9FE1E0A67AE0091253B /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9FA1E0A67AE0091253B /* Teacher+CoreDataClass.swift */; };
+		EE2EF9FF1E0A67AE0091253B /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9FB1E0A67AE0091253B /* Teacher+CoreDataProperties.swift */; };
 		EE477BCF1E0933B600811132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BCE1E0933B600811132 /* AppDelegate.swift */; };
 		EE477BD11E0933B600811132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BD01E0933B600811132 /* ViewController.swift */; };
 		EE477BD41E0933B600811132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE477BD21E0933B600811132 /* Main.storyboard */; };
 		EE477BD61E0933B600811132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE477BD51E0933B600811132 /* Assets.xcassets */; };
 		EE477BD91E0933B600811132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE477BD71E0933B600811132 /* LaunchScreen.storyboard */; };
+		EE477BE21E09344B00811132 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE477BE01E09344B00811132 /* User.xcdatamodeld */; };
+		EE477BF21E093B9B00811132 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BF01E093B9B00811132 /* Contact+CoreDataClass.swift */; };
+		EE477BF31E093B9B00811132 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BF11E093B9B00811132 /* Contact+CoreDataProperties.swift */; };
+		EE477BF81E093F8900811132 /* Country.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE477BF61E093F8900811132 /* Country.xcdatamodeld */; };
+		EE477C2D1E09466100811132 /* IMCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477C2C1E09466100811132 /* IMCoreDataManager.swift */; };
+		EED8D9D91E0BE98000ECA95B /* FetchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8D9D81E0BE98000ECA95B /* FetchResultViewController.swift */; };
+		EEFA2E451E0CC5090020E904 /* Nationality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFA2E411E0CC5090020E904 /* Nationality+CoreDataClass.swift */; };
+		EEFA2E461E0CC5090020E904 /* Nationality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFA2E421E0CC5090020E904 /* Nationality+CoreDataProperties.swift */; };
+		EEFA2E471E0CC5090020E904 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFA2E431E0CC5090020E904 /* City+CoreDataClass.swift */; };
+		EEFA2E481E0CC5090020E904 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFA2E441E0CC5090020E904 /* City+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE2EF9F61E0A66D00091253B /* School.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = School.xcdatamodel; sourceTree = "<group>"; };
+		EE2EF9F81E0A67AE0091253B /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataClass.swift"; path = "../Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE2EF9F91E0A67AE0091253B /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataProperties.swift"; path = "../Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE2EF9FA1E0A67AE0091253B /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Teacher+CoreDataClass.swift"; path = "../Teacher+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE2EF9FB1E0A67AE0091253B /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Teacher+CoreDataProperties.swift"; path = "../Teacher+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE477BCB1E0933B600811132 /* SwiftCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE477BCE1E0933B600811132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE477BD01E0933B600811132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,16 @@
 		EE477BD51E0933B600811132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE477BD81E0933B600811132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE477BDA1E0933B600811132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE477BE11E09344B00811132 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		EE477BF01E093B9B00811132 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Contact+CoreDataClass.swift"; path = "../Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE477BF11E093B9B00811132 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Contact+CoreDataProperties.swift"; path = "../Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE477BF71E093F8900811132 /* Country.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Country.xcdatamodel; sourceTree = "<group>"; };
+		EE477C2C1E09466100811132 /* IMCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMCoreDataManager.swift; sourceTree = "<group>"; };
+		EED8D9D81E0BE98000ECA95B /* FetchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchResultViewController.swift; sourceTree = "<group>"; };
+		EEFA2E411E0CC5090020E904 /* Nationality+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nationality+CoreDataClass.swift"; path = "../Nationality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEFA2E421E0CC5090020E904 /* Nationality+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nationality+CoreDataProperties.swift"; path = "../Nationality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEFA2E431E0CC5090020E904 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "City+CoreDataClass.swift"; path = "../City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEFA2E441E0CC5090020E904 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "City+CoreDataProperties.swift"; path = "../City+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE2EF9F41E0A66A20091253B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EF9F81E0A67AE0091253B /* Student+CoreDataClass.swift */,
+				EE2EF9F91E0A67AE0091253B /* Student+CoreDataProperties.swift */,
+				EE2EF9FA1E0A67AE0091253B /* Teacher+CoreDataClass.swift */,
+				EE2EF9FB1E0A67AE0091253B /* Teacher+CoreDataProperties.swift */,
+				EE2EF9F51E0A66D00091253B /* School.xcdatamodeld */,
+			);
+			name = School;
+			sourceTree = "<group>";
+		};
 		EE477BC21E0933B500811132 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +96,49 @@
 		EE477BCD1E0933B600811132 /* SwiftCoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EE2EF9F41E0A66A20091253B /* School */,
+				EE477C291E09463000811132 /* CoreDataManager */,
+				EE477BF51E093F5E00811132 /* Country */,
+				EE477BE31E09354600811132 /* User */,
 				EE477BCE1E0933B600811132 /* AppDelegate.swift */,
 				EE477BD01E0933B600811132 /* ViewController.swift */,
+				EED8D9D81E0BE98000ECA95B /* FetchResultViewController.swift */,
 				EE477BD21E0933B600811132 /* Main.storyboard */,
 				EE477BD51E0933B600811132 /* Assets.xcassets */,
 				EE477BD71E0933B600811132 /* LaunchScreen.storyboard */,
 				EE477BDA1E0933B600811132 /* Info.plist */,
 			);
 			path = SwiftCoreDataDemo;
+			sourceTree = "<group>";
+		};
+		EE477BE31E09354600811132 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EE477BF01E093B9B00811132 /* Contact+CoreDataClass.swift */,
+				EE477BF11E093B9B00811132 /* Contact+CoreDataProperties.swift */,
+				EE477BE01E09344B00811132 /* User.xcdatamodeld */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		EE477BF51E093F5E00811132 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				EEFA2E411E0CC5090020E904 /* Nationality+CoreDataClass.swift */,
+				EEFA2E421E0CC5090020E904 /* Nationality+CoreDataProperties.swift */,
+				EEFA2E431E0CC5090020E904 /* City+CoreDataClass.swift */,
+				EEFA2E441E0CC5090020E904 /* City+CoreDataProperties.swift */,
+				EE477BF61E093F8900811132 /* Country.xcdatamodeld */,
+			);
+			name = Country;
+			sourceTree = "<group>";
+		};
+		EE477C291E09463000811132 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE477C2C1E09466100811132 /* IMCoreDataManager.swift */,
+			);
+			name = CoreDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +173,7 @@
 				TargetAttributes = {
 					EE477BCA1E0933B600811132 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9J6U5564X4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +214,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFA2E471E0CC5090020E904 /* City+CoreDataClass.swift in Sources */,
+				EE477C2D1E09466100811132 /* IMCoreDataManager.swift in Sources */,
+				EE477BE21E09344B00811132 /* User.xcdatamodeld in Sources */,
+				EE2EF9FC1E0A67AE0091253B /* Student+CoreDataClass.swift in Sources */,
+				EED8D9D91E0BE98000ECA95B /* FetchResultViewController.swift in Sources */,
+				EE2EF9FF1E0A67AE0091253B /* Teacher+CoreDataProperties.swift in Sources */,
 				EE477BD11E0933B600811132 /* ViewController.swift in Sources */,
+				EE477BF81E093F8900811132 /* Country.xcdatamodeld in Sources */,
+				EE2EF9FD1E0A67AE0091253B /* Student+CoreDataProperties.swift in Sources */,
+				EEFA2E481E0CC5090020E904 /* City+CoreDataProperties.swift in Sources */,
+				EE2EF9FE1E0A67AE0091253B /* Teacher+CoreDataClass.swift in Sources */,
+				EE477BF21E093B9B00811132 /* Contact+CoreDataClass.swift in Sources */,
+				EE2EF9F71E0A66D00091253B /* School.xcdatamodeld in Sources */,
+				EEFA2E461E0CC5090020E904 /* Nationality+CoreDataProperties.swift in Sources */,
+				EE477BF31E093B9B00811132 /* Contact+CoreDataProperties.swift in Sources */,
+				EEFA2E451E0CC5090020E904 /* Nationality+CoreDataClass.swift in Sources */,
 				EE477BCF1E0933B600811132 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J6U5564X4;
 				INFOPLIST_FILE = SwiftCoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imWallet.SwiftCoreDataDemo;
@@ -270,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J6U5564X4;
 				INFOPLIST_FILE = SwiftCoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imWallet.SwiftCoreDataDemo;
@@ -297,8 +392,42 @@
 				EE477BDF1E0933B600811132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE2EF9F51E0A66D00091253B /* School.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE2EF9F61E0A66D00091253B /* School.xcdatamodel */,
+			);
+			currentVersion = EE2EF9F61E0A66D00091253B /* School.xcdatamodel */;
+			path = School.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EE477BE01E09344B00811132 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE477BE11E09344B00811132 /* User.xcdatamodel */,
+			);
+			currentVersion = EE477BE11E09344B00811132 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EE477BF61E093F8900811132 /* Country.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE477BF71E093F8900811132 /* Country.xcdatamodel */,
+			);
+			currentVersion = EE477BF71E093F8900811132 /* Country.xcdatamodel */;
+			path = Country.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE477BC31E0933B500811132 /* Project object */;
 }
