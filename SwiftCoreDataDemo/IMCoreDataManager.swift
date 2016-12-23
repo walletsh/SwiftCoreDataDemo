@@ -31,6 +31,7 @@ import CoreData
 extension NSManagedObjectContext{
     // MARK: - 创建上下文
     class func setupManagedObjectContext(_ sqlName: String) -> NSManagedObjectContext {
+        
         /* NSManagedObjectContextConcurrencyType:
          confinementConcurrencyType  并发类型，被弃用
          privateQueueConcurrencyType 私有并发队列类型，操作都是在子线程中完成的。
