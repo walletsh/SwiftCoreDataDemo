@@ -12,6 +12,7 @@
 		EE2EF9FD1E0A67AE0091253B /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9F91E0A67AE0091253B /* Student+CoreDataProperties.swift */; };
 		EE2EF9FE1E0A67AE0091253B /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9FA1E0A67AE0091253B /* Teacher+CoreDataClass.swift */; };
 		EE2EF9FF1E0A67AE0091253B /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF9FB1E0A67AE0091253B /* Teacher+CoreDataProperties.swift */; };
+		EE37CE2B1E10BB08000374CC /* PersistentContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE37CE2A1E10BB08000374CC /* PersistentContainerViewController.swift */; };
 		EE477BCF1E0933B600811132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BCE1E0933B600811132 /* AppDelegate.swift */; };
 		EE477BD11E0933B600811132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE477BD01E0933B600811132 /* ViewController.swift */; };
 		EE477BD41E0933B600811132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE477BD21E0933B600811132 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		EE2EF9F91E0A67AE0091253B /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataProperties.swift"; path = "../Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE2EF9FA1E0A67AE0091253B /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Teacher+CoreDataClass.swift"; path = "../Teacher+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EE2EF9FB1E0A67AE0091253B /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Teacher+CoreDataProperties.swift"; path = "../Teacher+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE37CE2A1E10BB08000374CC /* PersistentContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentContainerViewController.swift; sourceTree = "<group>"; };
 		EE477BCB1E0933B600811132 /* SwiftCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE477BCE1E0933B600811132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE477BD01E0933B600811132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				EE477BCE1E0933B600811132 /* AppDelegate.swift */,
 				EE477BD01E0933B600811132 /* ViewController.swift */,
 				EED8D9D81E0BE98000ECA95B /* FetchResultViewController.swift */,
+				EE37CE2A1E10BB08000374CC /* PersistentContainerViewController.swift */,
 				EE477BD21E0933B600811132 /* Main.storyboard */,
 				EE477BD51E0933B600811132 /* Assets.xcassets */,
 				EE477BD71E0933B600811132 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEFA2E471E0CC5090020E904 /* City+CoreDataClass.swift in Sources */,
+				EE37CE2B1E10BB08000374CC /* PersistentContainerViewController.swift in Sources */,
 				EE477C2D1E09466100811132 /* IMCoreDataManager.swift in Sources */,
 				EE477BE21E09344B00811132 /* User.xcdatamodeld in Sources */,
 				EE2EF9FC1E0A67AE0091253B /* Student+CoreDataClass.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-
+//MARK: - NSManagedObjectContext管理CoreData
 /**
  模型文件操作
  1.1 创建模型文件，后缀名为.xcdatamodeld。创建模型文件之后，可以在其内部进行添加实体等操作(用于表示数据库文件的数据结构)
@@ -29,7 +29,7 @@ import CoreData
  */
 
 extension NSManagedObjectContext{
-    // MARK: - 创建上下文
+    
     class func setupManagedObjectContext(_ sqlName: String) -> NSManagedObjectContext {
         
         /* NSManagedObjectContextConcurrencyType:
@@ -73,6 +73,56 @@ extension NSManagedObjectContext{
         return context
     }
 }
+
+//MARK: -NSPersistentContainer管理CoreData
+
+@available(iOS 10.0, *)
+class IMCoreDataManager {
+    
+    static let manager = IMCoreDataManager()
+    private init(){}
+
+    lazy var persistentContainer: NSPersistentContainer = {
+        
+        let url = Bundle.main.url(forResource: "User", withExtension: "momd")
+        let objModel = NSManagedObjectModel(contentsOf: url!)
+        let persistentContainer = NSPersistentContainer(name: "user.sql", managedObjectModel: objModel!)
+        
+        ///   合并Bundle所有.momd文件,budles: 指定为nil,自动从mainBundle里找所有.momd文件
+//        let objModel = NSManagedObjectModel.mergedModel(from: nil)
+//        let persistentContainer = NSPersistentContainer(name: "sql.db", managedObjectModel: objModel!)
+        
+        /// 加载存储器，此方法必须要调用，否则无法存储数据
+        /// block中NSPersistentStoreDescription用于描述生成的存储器信息，如：数据库文件路径、存储类型等  NSError用于描述加载存储器是否成功或失败信息
+        persistentContainer.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            
+            print("loadPersistentStores storeDescription : \(storeDescription)")
+            
+            if let error = error{
+                fatalError("loadPersistentStores error : \(error)")
+            }
+        })
+        
+        return persistentContainer
+    }()
+}
+
+extension IMCoreDataManager{
+    
+    func saveDataForSql() {
+        
+        if persistentContainer.viewContext.hasChanges {
+            do {
+                try persistentContainer.viewContext.save()
+                print("saveDataForSql success!!!")
+            } catch  {
+                print("saveDataForSql error : \(error.localizedDescription) ")
+            }
+        }
+    }
+    
+}
+
 
 
 

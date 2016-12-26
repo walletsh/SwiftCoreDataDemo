@@ -245,6 +245,12 @@ class ViewController: UIViewController {
     @IBAction func fetchRequestController(_ sender: UIButton) {
         self.present(FetchResultViewController(), animated: true) {}
     }
+    
+    
+    @IBAction func persistentContainerController(_ sender: UIButton) {
+        self.present(PersistentContainerViewController(), animated: true, completion: nil)
+    }
+    
 }
 
 
@@ -627,3 +633,5 @@ extension ViewController{
         }
     }
 }
+
+/**********************************************************/
